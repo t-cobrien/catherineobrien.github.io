@@ -50,14 +50,47 @@
     text-align: left;
   }
 }
-
-<!-- homepage code -->
+<!-- bio card code -->
 h1 {
   text-align: center;
 }
 
 h2 {
   text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
 </style>
 </head>
@@ -73,9 +106,21 @@ h2 {
     <i class="fa fa-bars"></i>
   </a>
 </ul>
-
-<h1>Catherine O'Brien</h1>
-<h2>Programmer, Data Scientist, Educator, Activist</h2>
+  
+<div class="card">
+  <img src="https://catherineobrien.github.io/headshot.png" alt="John" style="width:100%" alt="Catherine, a white woman with short hair, standing in front of the door and looking to the side.">
+  <h1>Catherine O'Brien</h1>
+  <p class="title">Programmer, Data Scientist, Educator, Activist</p>
+  <p>Barnard College of Columbia University</p>
+  <p>New York City, NY</p>
+  <div style="margin: 24px 0;"> 
+  	 <a href="https://twitter.com/catherine0brien"><i class="fa fa-envelope"></i></a> 
+    <a href="#https://www.linkedin.com/in/catherine-e-obrien/"><i class="fa fa-linkedin"></i></a>  
+    <a href="https://github.com/catherineobrien"><i class="fa fa-github"></i></a> 
+    <a href="https://twitter.com/catherine0brien"><i class="fa fa-twitter"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
 
 <script>
 function myFunction() {
