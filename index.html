@@ -1,1 +1,93 @@
 # catherineobrien.github.io
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Menu code -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.topnav {
+  text-align: center;
+}
+
+.topnav a {
+  font-size: 13pt;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  font-size: 20pt;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+<!-- homepage code -->
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+</style>
+</head>
+
+<body style="background-color:#f49b68">
+
+<div class="topnav" id="myTopnav"> 
+  <a href="#home" class="active">Home</a>
+  <a href="#resume">Resume</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</ul>
+
+<h1>Catherine O'Brien</h1>
+<h2>Programmer, Data Scientist, Educator, Activist</h2>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
